@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="EduProg.css" />
+  <link rel="stylesheet" href="bootstrap.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap.js"></script>
+
+  <title>About Page</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-KPVK">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">КПВК</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="EduPrograms.html">Программы обучения</a>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Поступление
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Условия поступления</a></li>
+              <li><a class="dropdown-item" href="#">Сроки и процесс поступления</a></li>
+              <li><a class="dropdown-item" href="#">Финансовая поддержка</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Колледж и удобства
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Описание колледжа</a></li>
+              <li><a class="dropdown-item" href="#">Учебные объекты</a></li>
+              <li><a class="dropdown-item" href="#">Студенческая жизнь</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">Вопросы и ответы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- heros -->
+  <style>
+    .dropdown-item:hover{
+      background: #007bff;
+    }
+@media(max-width: 767px){
+  .p-4.p-md-5.mb-4.text-white.bg-KPVK{
+    padding: 2rem;
+  }
+  .col-md-9.px-5{
+    padding: 0;
+  }
+  .display-3.fst-italic{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .lead.my-4{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+.col-lg-12.col-md-60.px-5{
+  padding: 2rem;
+}
+.lead.mt-3.mb-4{
+  font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.fw-bold.lh-1.mb-3{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #212529;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* .bg-KPVK {
+  background-color: #007bff !important;
+} */
+
+.text-white {
+  color: #fff !important;
+}
+
+.bg-dark-alt {
+  background-color: #252525;
+}
+
+.text-yellow {
+  color: #ffc107 !important;
+}
+
+.course-list li {
+  padding-bottom: 15px;
+}
+
+.highlight {
+  background-color: rgba(255, 193, 7, 0.5) !important;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.text-muted {
+  color: #225a8b !important;
+}
+
+/* Additional Styling */
+.section-title {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.course-item {
+  margin-bottom: 10px;
+}
+
+.course-item:hover {
+  background-color: #f8f9fa;
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .nav {
+  margin-bottom: 0;
+}
+
+.footer .nav li {
+  margin-right: 10px;
+}
+
+.footer .nav li:last-child {
+  margin-right: 0;
+}
+
+.footer .nav-link {
+  color: #1561a3;
+}
+
+.footer .nav-link:hover {
+  color: #007bff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icons .nav li {
+  margin-left: 10px;
+}
+
+.social-icons .nav li:first-child {
+  margin-left: 0;
+}
+
+.social-icons .nav-link {
+  color: #0458a2;
+}
+
+.social-icons .nav-link:hover {
+  color: #131518;
+}
+
+  </style>
+  <div class="p-4 p-md-5 mb-4 text-white bg-KPVK">
+    <div class="col-md-9 px-5">
+      <h1 class="display-3 fst-italic">Программы обучения</h1>
+      <p class="lead my-4">
+        Обзор программ в Костанайском политехническом высшем колледже представляет обширный спектр образовательных возможностей для студентов. Наш колледж предлагает разнообразные программы, охватывающие различные области знаний и специализаций..<br></p>
+    </div>
+  </div>
+  <style>
+    .toggle-text {
+      color: #000000;
+      background-color: transparent;
+      padding: 5px 10px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  
+    .sub-list {
+      display: none;
+      list-style-type: none;
+      padding-left: 0;
+    }
+  
+    .collapsed .sub-list {
+      display: none;
+    }
+  
+    .expanded .sub-list {
+      display: block;
+    }
+  </style>
+  
+  <div class="">
+    <div class="col-lg-12 col-md-60 px-5">
+      <h2 class="fw-bold lh-1 mb-3" style="text-transform: uppercase;"><p><br>Костанайский политехнический высший колледж предлагает следующие программы обучения:</p></h2>
+      <ul class="lead mt-3 mb-4">
+        
+          <li>Технологическая область:
+            <ul>
+              <li>Технология продукции и организация производства</li>
+              <li>Технология швейных изделий</li>
+              <li>Технология пищевых производств</li>
+            </ul>
+          </li>
+          <li>Электро-технологическая область:
+            <ul>
+              <li>Электротехника и электроника</li>
+              <li>Электромонтажные работы</li>
+              <li>Автоматизация и управление в технических системах</li>
+            </ul>
+          </li>
+          <li>Информационно-экономическая область:
+            <ul>
+              <li>Информационные системы и технологии</li>
+              <li>Экономика и бухгалтерский учет</li>
+              <li>Менеджмент организации</li>
+            </ul>
+          </li>
+          <li>Механико-технологическая область:
+            <ul>
+              <li>Машиностроение и металлообработка</li>
+              <li>Автотранспортные средства и техника</li>
+              <li>Техническое обслуживание и ремонт автомобилей</li>
+            </ul>
+          </li>
+      </ul><br>
+    </div>
+  </div>
+  <hr><br>
+  <div class="col d-flex justify-content-center">
+    <div class="input-group" style="width: 500px; height: 30px;">
+      <select class="custom-select" id="fileSelect">
+        <option selected disabled>Выберите файл...</option>
+        <option value="index.html">EduPrograms.html</option>
+        <option value="About.html">OtherFile.html</option>
+        <option value="EduPrograms.html">EduPrograms.html</option>
+        <option value="About.html">OtherFile.html</option>
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" onclick="changeObjectFile()">Изменить</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="d-flex justify-content-center flex-column-reverse flex-md-row">
+    <div class="col-md-6 d-flex justify-content-center mb-3">
+      <div class="col">
+        <button class="btn btn-primary btn-sm mb-3" id="button1" style="display: none; width: 300px; height: 100px;">Кнопка 1</button>
+        <button class="btn btn-primary btn-sm mb-3" id="button4" style="display: none; width: 300px; height: 100px;">Кнопка 1</button>
+        <button class="btn btn-primary btn-sm mb-3" id="button5" style="display: none; width: 300px; height: 100px;">Кнопка 1</button>
+      </div>
+      <button class="btn btn-primary" id="button2" style="display: none;">Кнопка 2</button>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end mb-3">
+      <object id="objectFile" data="EduPrograms.html" type="text/html" width="100%" height="700px"></object>
+    </div>
+  </div>
+  <script>
+  function changeObjectFile() {
+    var select = document.getElementById("fileSelect");
+    var object = document.getElementById("objectFile");
+    var button1 = document.getElementById("button1");
+    var button4 = document.getElementById("button4");
+    var button5 = document.getElementById("button5");
+    var button2 = document.getElementById("button2");
+    var selectedFile = select.value;
+  
+    if (selectedFile !== "") {
+      object.setAttribute("data", selectedFile);
+      object.style.display = "block"; 
+  
+
+      if (selectedFile === "EduPrograms.html") {
+        button1.style.display = "block";
+        button4.style.display = "block";
+        button5.style.display = "block";
+        button2.style.display = "none";
+      } else if (selectedFile === "About.html") {
+        button1.style.display = "none";
+        button2.style.display = "block";
+      } else {
+        button1.style.display = "none";
+        button2.style.display = "none";
+      }
+    } else {
+      object.setAttribute("data", "");
+      object.style.display = "none";
+      button1.style.display = "none";
+      button2.style.display = "none";
+    }
+  }
+  </script>
+    <br>
+    <br>
+  <hr><br>
+  <div class="col-lg-12 col-md-60 px-5">
+    <div class="lead mt-3 mb-4">
+      Каждая из этих областей предлагает студентам углубленное изучение соответствующих дисциплин,
+      развитие практических навыков и подготовку к работе в соответствующей сфере. Программы обучения в Костанайском политехническом высшем колледже ориентированы на формирование компетентности и подготовку к профессиональной деятельности в выбранной области.
+    </div>
+</div><br>
+
+
+
+  <!-- footer -->
+  <div class="container">
+    <hr class="featurette-divider">
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="col-md-19 mb-4">
+              <h5 class="footer-heading">КПВК</h5>
+              <p>Некоторый текст о вашей организации или компании.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-md-90 mb-4">
+              <h5 class="footer-heading">Контакты</h5>
+              <ul class="footer-links">
+                <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><a href="#">Адрес вашего офиса</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-md-9 mb-4">
+              <h5 class="footer-heading">Социальные сети</h5>
+              <ul class="footer-social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+  </div>
+
+  <!-- icom -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path
+        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.444 16 10.172 16 8s-.01-2.444-.048-3.298c-.04-.851-.175-1.433-.372-1.942a3.93 3.93 0 0 0-.923-1.416A3.918 3.918 0 0 0 13.24.42C12.732.222 12.15.087 11.298.048 10.445.01 10.172 0 8 0zm0 1.334c2.1 0 2.368.012 3.205.05.758.034 1.112.146 1.412.25.368.125.637.287.907.557.27.27.432.54.557.907.104.3.216.653.25 1.412.038.836.05 1.104.05 3.205s-.012 2.368-.05 3.205c-.034.758-.146 1.112-.25 1.412-.125.368-.287.637-.557.907-.27.27-.54.432-.907.557-.3.104-.653.216-1.412.25C10.368 14.963 10.1 14.976 8 14.976s-2.368-.012-3.205-.05c-.758-.034-1.112-.146-1.412-.25-.368-.125-.637-.287-.907-.557a3.763 3.763 0 0 1-.557-.907c-.104-.3-.216-.653-.25-1.412C1.034 10.702 1.022 10.434 1.022 8.333s.012-2.368.05-3.205c.034-.758.146-1.112.25-1.412.125-.368.287-.637.557-.907.27-.27.54-.432.907-.557.3-.104.653-.216 1.412-.25C5.634 1.034 5.902 1.022 8 1.022zm0 3.89A4.089 4.089 0 0 0 3.111 8a4.089 4.089 0 0 0 4.889 4.889A4.089 4.089 0 0 0 12.889 8 4.089 4.089 0 0 0 8 3.912zm0 6.666A2.578 2.578 0 0 1 5.422 8c0-1.423 1.157-2.58 2.578-2.58 1.422 0 2.579 1.157 2.579 2.58A2.578 2.578 0 0 1 8 10.578zm3.467-4.106c-.22 0-.398-.178-.398-.398 0-.22.178-.398.398-.398.22 0 .398.178.398.398 0 .22-.178.398-.398.398zm-6.934 0c-.22 0-.398-.178-.398-.398 0-.22.178-.398.398-.398.22 0 .398.178.398.398 0 .22-.178.398-.398.398z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M16 3.74c-.59.26-1.22.44-1.88.52.67-.4 1.18-1.03 1.42-1.78-.62.37-1.3.64-2.03.8-.58-.62-1.41-1-2.33-1-1.76 0-3.18 1.42-3.18 3.18 0 .25.03.5.08.74C4.1 6.21 2.3 4.92 1.17 3.17c-.26.44-.41.96-.41 1.52 0 1.1.56 2.07 1.41 2.64-.52-.02-1.01-.16-1.44-.4v.04c0 1.54 1.1 2.83 2.56 3.12-.27.07-.56.1-.86.1-.21 0-.41-.02-.61-.06.42 1.3 1.64 2.25 3.08 2.28-1.13.88-2.54 1.4-4.08 1.4-.26 0-.51-.02-.76-.05 1.46.94 3.18 1.49 5.03 1.49 6.03 0 9.34-5 9.34-9.34 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7l-.02-.02z" />
+    </symbol>
+  </svg>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/brands.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.min.js"></script>
+</body>
+
+</html>
